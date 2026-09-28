@@ -5,7 +5,7 @@
   <br>
   Android and Windows · iOS in progress
   <br><br>
-  <a href="https://github.com/selectvpn/selectvpn/releases/latest"><b>Download</b></a>
+  <a href="https://github.com/selectvpn/releases/releases/latest"><b>Download</b></a>
   &nbsp;·&nbsp;
   <a href="https://selectvpn.net">selectvpn.net</a>
   &nbsp;·&nbsp;
@@ -40,7 +40,7 @@
 
 ## Download
 
-Get the latest build from **[Releases](https://github.com/selectvpn/selectvpn/releases/latest)**.
+Get the latest build from **[Releases](https://github.com/selectvpn/releases/releases/latest)**.
 
 | Platform | File |
 |---|---|
@@ -56,26 +56,3 @@ tunnel creates a network adapter, and Windows allows that only to administrators
 
 At **[selectvpn.net](https://selectvpn.net)** or from the Telegram bot
 **[@select_vpn_bot](https://t.me/select_vpn_bot)**.
-
-## Check that the file is ours
-
-Only files from this page and from selectvpn.net are ours. Every release carries
-`SHA256SUMS.txt` with a signature made by the project key:
-
-```
------BEGIN PUBLIC KEY-----
-MCowBQYDK2VwAyEAIZnifF4DffSVAfcBCXNCcYX93hlE6cwRnNkdfdtRj7o=
------END PUBLIC KEY-----
-```
-
-Save it as `selectvpn.pub.pem` next to the downloaded files and run:
-
-```bash
-openssl pkeyutl -verify -rawin -pubin -inkey selectvpn.pub.pem \
-  -in SelectVPN-1.1.0-SHA256SUMS.txt -sigfile SelectVPN-1.1.0-SHA256SUMS.txt.sig
-shasum -a 256 -c --ignore-missing SelectVPN-1.1.0-SHA256SUMS.txt
-```
-
-`Signature Verified Successfully` and `OK` next to your file mean it's the real one. On Windows,
-`openssl` comes with Git for Windows; the hash alone is
-`certutil -hashfile SelectVPN-1.1.0-windows-setup.exe SHA256`.
