@@ -5,7 +5,7 @@
   <br>
   Android and Windows · iOS in progress
   <br><br>
-  <a href="https://github.com/selectvpn/releases/releases/latest"><b>Download</b></a>
+  <a href="https://github.com/selectvpn/selectvpn/releases/latest"><b>Download</b></a>
   &nbsp;·&nbsp;
   <a href="https://selectvpn.net">selectvpn.net</a>
   &nbsp;·&nbsp;
@@ -36,11 +36,13 @@
   VPN"; Windows gets its own, under the same name.
 - **Stays on.** Closing the app doesn't drop the tunnel. On Android it's one tap away in Quick
   Settings and in the notification.
+- **Updates itself.** New versions come from this page, signed, and install while you're not
+  looking; a running VPN comes back on its own.
 - **Servers by purpose.** General, Gaming and Reserve, each sorted by ping.
 
 ## Download
 
-Get the latest build from **[Releases](https://github.com/selectvpn/releases/releases/latest)**.
+Get the latest build from **[Releases](https://github.com/selectvpn/selectvpn/releases/latest)**.
 
 | Platform | File |
 |---|---|
